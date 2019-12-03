@@ -1,0 +1,29 @@
+## Algorithm running time
+- Choose the most efficient algorithm, optimizing for run time and space
+- Algorithm run time growth represented by using big O notation. 
+- Big O represents the worst case scenario run time
+
+### Common Big O run times
+- O(n) : Linear time i.e. Simple search - searching through a list of records, one entry at a time until you find the one you're looking for , Writing to an array or reading from a linked list
+- O(n!) : Factorial time i.e. Travelling salesman algorithm: For n items, the algorithm will take n! operations to complete
+- O(log n): Logarithmic time i.e. Binary search: Algorithm becomes faster with increasing number of items
+- O(n log n): i.e. A fast sorting algorithm i.e. Quick sort
+- O(n^2): A slow sorting algorithm i.e.selection sort
+- O(1) : Constant time i.e. Reading from an array
+
+
+## Arrays vs Linked Lists
+- Arrays: items stored next to each other (contiguously) in memory. 
+    - Pro: it's easy to find the next and previous items on the list since it's easy to predict the address of every item in the list. i.e. If you have 25 items and you want to reference the 15th, if you know the address of the 1st item, then the 15th will be (address of first + 14). Arrays are good for random retrieval
+    - Cons: If you need to add items in the array, you either have to reserve space next to the last item(wasted space if you don't use it) or move the array to another memory slot where everything fits
+- Linked Lists: Each item stores a reference to the next item in the list. 
+    - Pro: Easy to store items since they don't have to be stored next to each other. Any item can be stored in any available space. Easy if you're going to read all the items at one time, you just have to follow the chain
+    - Con: Hard to reference individual items in the list i.e. The longer the list, the slower the retrieval process will be(linear time). i,e with a linked list with 100 items, I have to move sequentially through 99 items in order to get the address of the 100th item in the list
+
+### Running time for Arrays vs lists
+         | ARRAYS     | LISTS
+ --------| ----------| ----------
+READING  |  O(1)     |  O(n)
+WRITING  |  O(n)     |  O(1)
+
+## Selection sort
