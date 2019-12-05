@@ -25,5 +25,20 @@
  --------| ----------| ----------
 READING  |  O(1)     |  O(n)
 WRITING  |  O(n)     |  O(1)
+DELETION |  O(n)     |  O(1)
 
-## Selection sort
+- Linked lists good for sequential access (to know where the next element is, you need to look at the previous element), insertions( you only need to change what the previous element points to) and deletes( you just need to change what the previous element points to). Not good for reading since sequential access is slow
+- Arrays good for random access (not good for insertions + deletions since you'll have to move all the next elements + you need to find contiguous space for all the elements)
+
+
+## Recursion
+### Base case + Recursive case
+- Every recursive function has 2 parts, the base case and the recursive case
+- Base case is to let the function know to stop
+- Recursive case is to let the function know to call itself again
+
+
+## Quicksort
+
+
+
